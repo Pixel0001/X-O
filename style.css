@@ -1,261 +1,269 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 #container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    background-image: url("./images/background2.avif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url("https://plus.unsplash.com/premium_photo-1682124843954-eb395dfa50ea?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #tabelul{
-    background-color: #000;
+  background-color: #000;
 }
 #tabelul td {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #fff;
-    font-size: 48px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  font-size: 48px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 #tabelul td:hover:not(.ocupat) {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 #Game_Container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 #Player_container{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 #Player{
-    display: flex;
-    justify-content: center;
-    background-color: #ff0000;
-    color: #fff;
-    border-radius: 20px;
-    width: 200px;
-    display: flex;
+  display: flex;
+  justify-content: center;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 20px;
+  width: 200px;
+  display: flex;
 }
 #Player_2{
-    display: flex;
-    justify-content: center;
-    background-color: #002fff;
-    color: #fff;
-    border-radius: 20px;
-    width: 200px;
-    display: none;
+  display: flex;
+  justify-content: center;
+  background-color: #002fff;
+  color: #fff;
+  border-radius: 20px;
+  width: 200px;
+  display: none;
 }
 #title{
-    color:#ddd;
+  color:#ddd;
 }
 
 #card{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #card_container {
-    position: fixed;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    background-color: white;
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    z-index: 9999;
-    opacity: 0;
-    transition: all 0.6s ease-out;
-    pointer-events: none;
-  }
-  
-  #card_container.active {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-    pointer-events: auto;
-  }
-  #overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 9998;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.6s ease;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-  }
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  pointer-events: none;
+}
+
+#card_container.active {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  pointer-events: auto;
+}
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 #jucator{
-    display: flex;
-    justify-content: center;
-    background-color: #ff0000;
-    color: #fff;
-    border-radius: 20px;
-    width: 300px;
-    display: flex;
-    margin-top: -150px;
+  display: flex;
+  justify-content: center;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  margin-top: -150px;
 
 }
 #img{
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 #restart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 75px;
-    position: fixed;
-    margin-bottom: -150px;
-    background-color: #78f8b2;
-    border: solid 1px #fff;
-    border-radius: 20px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 75px;
+  position: fixed;
+  margin-bottom: -150px;
+  background-color: #78f8b2;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .apa{
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 @media (max-width: 600px) and (orientation: portrait) {
-    #container, #Game_Container {
-      width: 100% !important;
-      max-width: 100% !important;
-      padding: 10px;
-      box-sizing: border-box;
+  #container, #Game_Container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #x, #o{
+    width: 70px;
+    height: 70px;
+  }
+  #tabelul {
+    width: 100% !important;
+  }
+  #tabelul td {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+  #Player, #Player_2 {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+  #card{
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  #card_container {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      background-color: white;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      z-index: 9999;
+      opacity: 0;
+      transition: all 0.6s ease-out;
+      pointer-events: none;
     }
-    #tabelul {
-      width: 100% !important;
-    }
-    #tabelul td {
+  #jucator {
+    width: 90%;
+    margin-top: -100px;
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+  #restart {
+    width: 150px;
+    height: 50px;
+    margin-bottom: -100px;
+    font-size: 1rem;
+    border-radius: 15px;
+  }
+  #img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-height: 600px) {
+  #container, #Game_Container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 5px 8px;
+    box-sizing: border-box;
+  }
+  #x, #o{
+    width: 70px;
+    height: 70px;
+  }
+  #tabelul {
+    width: 100% !important;
+  }
+  #tabelul td {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+  #Player, #Player_2 {
+    width: 120px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+  #card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    width: 160px;
+    height: 160px;
+  }
+  #card_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    width: 30%;
+    padding: 15px;
+    top: 8%;
+  }
+  #jucator {
+    width: 90%;
+    margin-top: -80px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+  #restart {
+    width: 120px;
+    height: 45px;
+    margin-bottom: -80px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+  }
+  .apa{
       width: 80px;
       height: 80px;
-      font-size: 24px;
-    }
-    #Player, #Player_2 {
-      width: 150px;
-      font-size: 1rem;
-      border-radius: 15px;
-    }
-    #card{
-        width: 200px;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #card_container {
-        position: fixed;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        background-color: white;
-        padding: 30px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        border-radius: 10px;
-        z-index: 9999;
-        opacity: 0;
-        transition: all 0.6s ease-out;
-        pointer-events: none;
-      }
-    #jucator {
-      width: 90%;
-      margin-top: -100px;
-      font-size: 1rem;
-      border-radius: 15px;
-    }
-    #restart {
-      width: 150px;
-      height: 50px;
-      margin-bottom: -100px;
-      font-size: 1rem;
-      border-radius: 15px;
-    }
-    #img {
-      width: 25px;
-      height: 25px;
-    }
   }
-  @media (max-height: 600px) {
-    #container, #Game_Container {
-      width: 100% !important;
-      max-width: 100% !important;
-      padding: 5px 8px;
-      box-sizing: border-box;
-    }
-    #tabelul {
-      width: 100% !important;
-    }
-    #tabelul td {
-      width: 80px;
-      height: 80px;
-      font-size: 18px;
-    }
-    #Player, #Player_2 {
-      width: 120px;
-      font-size: 0.9rem;
-      border-radius: 12px;
-    }
-    #card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      width: 160px;
-      height: 160px;
-    }
-    #card_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      width: 30%;
-      padding: 15px;
-      top: 8%;
-    }
-    #jucator {
-      width: 90%;
-      margin-top: -80px;
-      font-size: 0.9rem;
-      border-radius: 12px;
-    }
-    #restart {
-      width: 120px;
-      height: 45px;
-      margin-bottom: -80px;
-      font-size: 0.9rem;
-      border-radius: 12px;
-    }
-    .apa{
-        width: 80px;
-        height: 80px;
-    }
-    #img {
-      width: 25px;
-      height: 25px;
-    }
+  #img {
+    width: 25px;
+    height: 25px;
   }
+}
