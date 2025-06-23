@@ -11,11 +11,11 @@ tabel.addEventListener("click", (e) => {
     let target = e.target;
     if(target.tagName === "TD" && target.innerHTML === ''){
         if (x){
-            target.innerHTML = '<img src="./images/X.png" alt="X" class="opa" width="70px" height="70px">';
+            target.innerHTML = '<img src="https://i.pinimg.com/originals/52/7b/a5/527ba5513a72f1d28fa780a14d6511fd.gif" alt="X" class="opa" id="x" width="150px" height="150px">';
             player1.style.display = "none";
             player2.style.display = "flex";
         } else {
-            target.innerHTML = '<img src="./images/O2.jpeg" alt="O" class="opa" width="70px" height="70px">';
+            target.innerHTML = '<img src="https://i.pinimg.com/originals/4b/3e/5c/4b3e5c70d60b630e2e538166cdb79e16.gif" alt="O" class="opa" id="o" width="150px" height="150px">';
             player1.style.display = "flex";
             player2.style.display = "none";
         }
